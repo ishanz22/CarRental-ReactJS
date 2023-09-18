@@ -102,7 +102,7 @@ const styles = {
       
       },
       carImage2: {
-        marginTop: "170px",
+        marginTop: "110px",
         maxWidth: "75%",
         maxHeight: "75%",
       

@@ -6,7 +6,7 @@ const CheckboxGroup = () => {
   return (
     <div style={styles.checkboxContainer}>
       {/* Type */}
-      <div>
+      <div style={{width:'200%'}}>
         <text style={styles.title}>Type</text>
         <br />
         <Checkbox id="sport" label="Sport" />
@@ -23,6 +23,7 @@ const CheckboxGroup = () => {
         <Checkbox id="4-person" label="4 Person" />
         <Checkbox id="6-person" label="6 Person" />
         <Checkbox id="8-or-more" label="8 or More" />
+        <Checkbox id="8-or-more" label="8 or More" />
         {/* Add more checkboxes using the Checkbox component */}
       </div>
 
@@ -31,6 +32,10 @@ const CheckboxGroup = () => {
         <text style={styles.title}>Price</text>
         <div style={styles.progressBarContainer}>
           <ProgressBar completeness={completeness} />
+        </div>
+        <div style={{paddingTop:'15px'}}>
+        <text style={{fontSize:'18px',color:'#596780'}}>Max. $100.00</text>
+
         </div>
       </div>
     </div>
@@ -41,38 +46,21 @@ export default CheckboxGroup;
 const styles = {
 
     checkboxContainer: {
-      width: "50%",
+
       backgroundColor: "white",
       padding: "40px",
-      height: "100%",
+      height: "175vh",
+      width:"40%"
     },
     typeCapacityContainer: {
       paddingTop: "30px",
+      width: "200%",
     },
     progressBarContainer: {
       width: "100%",
       marginTop: "10px",
-      padding: "10px",
+     
     },
-
-
-  
-
-
-
- 
-  
-
-  
- 
-
- 
-
-
-
-
-
-
     boxImageStyle: {
       width: "100%",
       height: "100%",

@@ -8,6 +8,7 @@ const ProgressBar = ({ completeness }) => {
     transition: 'width 0.5s',
     position: 'relative',
     borderRadius: '10px',
+    
   };
 
   const dotSize = 20; // Adjust the dot size as needed
@@ -27,7 +28,9 @@ const ProgressBar = ({ completeness }) => {
   };
 
   return (
-    <div>
+    <>
+   
+    <div style={{width:"30%",}} >
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         {/* You can add labels or additional content here if needed */}
       </div>
@@ -43,6 +46,8 @@ const ProgressBar = ({ completeness }) => {
         <div style={dotStyle}></div> {/* Add the dot */}
       </div>
     </div>
+
+    </>
   );
 };
 

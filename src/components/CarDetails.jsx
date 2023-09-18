@@ -17,7 +17,10 @@ const CarDetails = () => {
       </div>
       <div style={{ display: "flex", alignItems: "center" }}>
         <img src={start} alt="5 Stars" style={styles.starIcon} />
-        {/* Add more star icons as needed */}
+        <img src={start} alt="5 Stars" style={styles.starIcon} /> 
+         <img src={start} alt="5 Stars" style={styles.starIcon} />
+         <img src={start} alt="5 Stars" style={styles.starIcon} /> 
+          <img src={start} alt="5 Stars" style={styles.starIcon} />
         <p style={styles.reviewersText}>440+ Reviewers</p>
       </div>
       <div>
@@ -41,9 +44,9 @@ const CarDetails = () => {
       </div>
       {/* Add more info rows as needed */}
       <div style={styles.priceContainer}>
-        <div>
-          <p style={styles.priceText}>$80.00 /</p>
-          <p style={styles.priceUnit}>days</p>
+        <div style={{flexDirection:"row"}}>
+          <p style={styles.priceText}>$80.00 /  <text style={styles.priceUnit}>days</text></p>
+        
         </div>
         <div
           style={{
